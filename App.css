@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, button {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.hospital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.hospital-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.hospital-card:hover {
+  transform: translateY(-5px);
+}
+
+.hospital-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.hospital-card .content {
+  padding: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #218838;
+}
+
+.admin-panel, .dashboard {
+  padding: 2rem;
+}
+
+.admin-panel h2, .dashboard h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.admin-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-panel th, .admin-panel td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.admin-panel th {
+  background-color: #f2f2f2;
+}
+
+.route-wrapper {
+  width: 100%;
+}
+
+.page-transition-wrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+body,
+.app {
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode a {
+  color: #90caf9;
+}
+
+.dark-mode input,
+.dark-mode textarea,
+.dark-mode select,
+.dark-mode .card,
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+  color: white;
+  border-color: #333;
+}
